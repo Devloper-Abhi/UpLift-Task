@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Login-Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>UpLift Task - Login</title>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class="main">
+            <div class="left"><img src="Images/login-pic.png" alt="" /></div>
+            <div class="right">
+                <h5>Login</h5>
+                <form action="/login" method="POST">
+          <div class="input">
+              <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Enter Email" required/>
+        </div>
+          <div class="input">
+              <i class="fa-solid fa-key"></i
+                ><input type="password" name="password" required placeholder="Enter Password" />
+        </div>
+        <label for="term" class="cur-pointer"><input type="checkbox" required name="Term" id="accept-term">  Accept all Terms & Conditions</label>
+        <button type="submit" class="Btn">Login</button>    
+    </form>
+    <p>Don't Have an account? <a href="/register">Register</a></p>
+      </div>
+    </div>
+</div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>

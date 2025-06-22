@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Huninn&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=WDXL+Lubrifont+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+:root {
+  --primary-color: #ff6767;
+  --secondary-color: #1b96d3;
+  --secondary-bg:#F8F8F8;
+  --poppins: "Poppins", sans-serif;
+  --huninn:"Poppins", sans-serif;
+  --WDXL:"WDXL Lubrifont SC", sans-serif;
+}
+/* Utils */
+span {
+  color: var(--primary-color);
+}
+.i-box{
+    padding: 5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+.Btn{
+    padding: 5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    transition-duration: 1s;
+    animation-duration: 1s;
+}
+button{
+    cursor: pointer;
+}
+/* Navbar */
+.navbar{
+    height: 100px;
+    width: 100vw;
+    background: var(--secondary-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 5vw;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.100);
+}
+.left{
+    width: fit-content;
+    font-size: 75%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.middle{
+    width: fit-content;
+    margin: auto;
+    padding: auto;
+}
+.middle .search form{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.middle .search input{
+    outline: none;
+    border: none;
+    background: none;
+    width: 75%;
+}
+.middle .search button{
+    background: var(--primary-color);
+    height: 100%;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    width: 20%;
+}
+.right{
+    display: flex;
+    width: fit-content;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.right h6{
+    font-size: 16px;
+}
+.right p{
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+/* INTRO */
+.intro{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.intro h3{
+    font-size: 40px;
+}
+.intro p{
+    font-size: 15px;
+}
+.enter-btn{
+    margin-top: 25px;
+}
+.enter-btn button a{
+    text-decoration: none;
+    color: white;
+}

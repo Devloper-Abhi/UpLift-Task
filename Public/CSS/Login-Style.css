@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Huninn&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=WDXL+Lubrifont+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+:root {
+  --primary-color: #ff6767;
+  --secondary-color: #1b96d3;
+  --secondary-bg:#F8F8F8;
+  --poppins: "Poppins", sans-serif;
+  --huninn:"Poppins", sans-serif;
+  --WDXL:"WDXL Lubrifont SC", sans-serif;
+}
+/* Utils */
+span {
+  color: var(--primary-color);
+}
+.i-box{
+    padding: 5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+.Btn{
+    padding: 5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    transition-duration: 1s;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+label{
+    font-size:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+body{
+    background-color: var(--primary-color);
+    background-image: url(../Images/Enter-Bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 99vh;
+}
+.main{
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+}
+.main .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .left img{
+width: 75%;
+height: 100%;
+}
+.main .right{
+    width: 50%;
+    margin-right: 4%;
+}
+.main .right h5{
+    font-size: 16px;
+    margin: 15px 5px;
+}
+.main .right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.main .right .input{
+    background: white;
+    width: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    gap:10px
+}
+.main .right .input input{
+    border: none;
+    width: 95%;
+}
+.main .right .input i{
+    width: 5%;
+}
+.cur-pointer{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+p{
+    font-size: 14px;
+    margin-top: 15px;
+}

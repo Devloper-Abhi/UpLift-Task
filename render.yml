@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: uplift-Task
+    env: node
+    buildCommand: npm install express ejs mongoose bcrypt nodemon -g
+    startCommand: nodemon server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: MongoUrl
+        value: mongodb+srv://Abhinandan:97423257339742325733%40%40bhi.MONGODB@apsarify.k11mszi.mongodb.net/Users

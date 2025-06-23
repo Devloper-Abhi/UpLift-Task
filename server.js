@@ -11,7 +11,7 @@ import denv from 'dotenv'
 
 const app = express()
 denv.config()
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 let connection = await mongoose.connect(process.env.MongoUrl)

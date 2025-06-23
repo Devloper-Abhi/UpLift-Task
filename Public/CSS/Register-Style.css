@@ -120,3 +120,23 @@ p{
 .cur-pointer{
     cursor: pointer;
 }
+@media (max-width:900px) {
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        display: none !important;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+@media (max-width:500px) {
+    .term{
+        font-size: 7px;
+    }
+}

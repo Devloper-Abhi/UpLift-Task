@@ -4,9 +4,7 @@ import Register from "../models/Register.js";
 
 const register = express.Router();
 register.use(express.urlencoded({extended : true}))
-await mongoose.connect(
-  "mongodb+srv://Abhinandan:97423257339742325733%40%40bhi.MONGODB@apsarify.k11mszi.mongodb.net/Users"
-);
+
 register.get('/',(req,res) => {
     res.render('register')
 })

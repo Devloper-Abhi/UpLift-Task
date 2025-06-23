@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import Register from '../models/Register.js'
 
 const login = express.Router()
-let connection =  await mongoose.connect("mongodb+srv://Abhinandan:97423257339742325733%40%40bhi.MONGODB@apsarify.k11mszi.mongodb.net/Users")
 
 login.get('/',(req,res)=>{
     res.render('login')

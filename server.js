@@ -7,12 +7,14 @@ import path from 'path';
 import { error } from 'console';
 import Login from './Routes/Login.js';
 import Register from './Routes/Register.js';
+import denv from 'dotenv'
 
 const app = express()
-const port = 3000
+denv.config()
+const port = process.env.PORT;
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
-let connection = await mongoose.connect("mongodb+srv://Abhinandan:97423257339742325733%40%40bhi.MONGODB@apsarify.k11mszi.mongodb.net/Users")
+let connection = await mongoose.connect(process.env.MongoUrl)
 
 app.use(express.static('Public'))
 app.use(express.static('models'))
